@@ -3,4 +3,15 @@
     <string name="username">UserName</string>
     <string name="password">Password</string>
     <string name="e_mail">E-Mail</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="alert_dialog_fill">Please fill require information</string>
+    <string name="no">NO</string>
+    <string name="yes">Yes</string>
+    <string name="already_exists">User already exists!</string>
+    <string name="user_reg_success">User registration success!</string>
+    <string name="login_success">LogIn Successful!</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="enter_user_name">Please enter your User Name</string>
+    <string name="user_not_exists">User doesn\'t exists in our database!</string>
 </resources>
