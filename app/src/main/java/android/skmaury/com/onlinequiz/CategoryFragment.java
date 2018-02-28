@@ -1,6 +1,8 @@
 package android.skmaury.com.onlinequiz;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.skmaury.com.onlinequiz.Common.Common;
 import android.skmaury.com.onlinequiz.Interface.ItemClickListener;
 import android.skmaury.com.onlinequiz.Model.Category;
 import android.skmaury.com.onlinequiz.ViewHolder.CategoryViewHolder;
@@ -74,7 +76,10 @@ public class CategoryFragment extends Fragment {
                 holder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onCLick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(getActivity(), String.format("%s|%s", adapter.getRef(position).getKey(), model.getName()), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getActivity(), String.format("%s|%s", adapter.getRef(position).getKey(), model.getName()), Toast.LENGTH_SHORT).show();
+                        Intent startGame = new Intent(getActivity(), StartActivity.class);
+                        Common.categoryId = adapter.getRef(position).getKey();
+                        startActivity(startGame);
                     }
                 });
             }

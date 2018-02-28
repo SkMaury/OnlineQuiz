@@ -21,4 +21,13 @@
     <string name="category">Category Name</string>
     <string name="categories">Categories</string>
     <string name="ranking">Ranking</string>
+    <string name="logo">logo</string>
+    <string name="play">PLAY</string>
+    <string name="zero">0</string>
+    <string name="dummy_total_question">1/30</string>
+    <string name="answer_a">Answer A</string>
+    <string name="answer_b">Answer B</string>
+    <string name="answer_c">Answer C</string>
+    <string name="answer_d">Answer D</string>
+    <string name="try_again">TRY AGAIN!</string>
 </resources>
