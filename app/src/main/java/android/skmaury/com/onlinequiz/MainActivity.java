@@ -1,6 +1,7 @@
 package android.skmaury.com.onlinequiz;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.skmaury.com.onlinequiz.Model.User;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -73,9 +74,12 @@ public class MainActivity extends AppCompatActivity {
                 if(dataSnapshot.child(user).exists()){
                     if(!user.isEmpty()){
                         User login = dataSnapshot.child(user).getValue(User.class);
-                        if(login.getPassword().equals(pwd))
-                            Toast.makeText(MainActivity.this, 
-                                    getString(R.string.login_success), Toast.LENGTH_SHORT).show();
+                        if(login.getPassword().equals(pwd)){
+                            Intent homeActivity = new Intent(MainActivity.this,
+                                    HomeActivity.class);
+                            startActivity(homeActivity);
+                            finish();
+                        }
                         else
                             Toast.makeText(MainActivity.this,
                                     getString(R.string.wrong_password), Toast.LENGTH_SHORT).show();

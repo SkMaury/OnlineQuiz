@@ -14,4 +14,11 @@
     <string name="wrong_password">Wrong Password</string>
     <string name="enter_user_name">Please enter your User Name</string>
     <string name="user_not_exists">User doesn\'t exists in our database!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_image">category image</string>
+    <string name="category">Category Name</string>
+    <string name="categories">Categories</string>
+    <string name="ranking">Ranking</string>
 </resources>
